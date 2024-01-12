@@ -1,0 +1,78 @@
+<html>
+<head>
+<style>
+    body {
+        background-image: url('ucl2.png');
+		background-repeat: no-repeat;
+		background-attachment: fixed; 
+		background-size: 100% 100%;
+    }
+</style>	
+<title>Web</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+</head>
+<body>
+
+<div class="w3-container" >
+	<center>
+	<font color=white><h1><b>KLUB FAVORIT SAYA</b></h1></font>
+	</center>
+</div>
+<div class="w3-bar w3-blue">
+	<button class="w3-bar-item w3-button" onclick="openKota('West Ham United')">West Ham United</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('Bayer Munchen')">Bayer Munchen</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('Manchester City')">Manchester City</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('Manchester United')">Manchester United</button>
+</div>
+
+<div id="West Ham United" class="w3-container kota w3-animate-fading" style="display:none">
+<h2 class ="w3-center">
+	<img src="west.png" class="" style="width:20%">
+	<p>Klub Sepak Bola West Ham United, umumnya dikenal sebagai West Ham, adalah klub sepak bola profesional yang berbasis di London,
+	Inggris. Tim ini didirikan pada tahun 1895 sebagai Thames Ironworks FC, dan kemudian berganti nama menjadi West Ham United
+	pada tahun 1900. Klub ini memiliki sejarah yang kaya dan telah menjadi rumah bagi beberapa pemain terhebat dalam sejarah 
+	sepak bola Inggris.</p>
+</div>
+
+<div id="Bayer Munchen" class="w3-container kota w3-animate-bottom" style="display:none">
+<h2 class = "w3-center">
+	<img src="bayermunchen.jpg" class="w3-button w3-white  w3-square" style="width:20%">
+	<p> Bayern memiliki sejarah panjang dari awal berdiri hingga mampu sukses seperti sekarang.
+	Klub berjuluk FC Hollywood ini pertama berdiri mulai tahun 1900 lalu. Berikut akan kami ulas mengenai sejarah
+	Bayern Munchen dari awal hingga di era modern kini. Bayern Munchen pertama dibentuk pada tahun 1900,
+	tepatnya pada tanggal 27 Februari 1900.</p>
+</div>
+
+<div id="Manchester City" class="w3-container kota w3-animate-top" style="display:none">
+<h2 class = "w3-center">
+	<img src="manchestercity.jpg" class="w3-button w3-white  w3-square" style="width:20%">  
+	<p>Awal mula terbentuknya Manchester City, ditandai dengan diangkatnya Arthur Connell sebagai kepala Gereja St Mark di West Gorton,
+	sebuah distrik bagian timut Kota Manchester. Kejahatan di Kota Manchester saat itu sangat tinggi. Putri Arthur Connell, Anna
+	Connell ingin membentuk asosiasi olah raga pemuda untuk menurunkan tingkat kejahatan di Kota Manchester. Maka dari itu, lahirlah sebuah 
+	klub kriket di bawah Gereja St Mark pada tahun 1868. Selanjutnya, klub kriket tersebut mengalami perubahan menjadi sebuah tim 
+	sepak bola bernama St.Marks (West Gordon) pada tahun 1880. Kemunculan tim sepak bola tersebut tidak lepas dari
+	kepopuleran dunia bal-balan yang mulai naik.</p>
+</div>
+
+<div id="Manchester United" class="w3-container kota w3-animate-zoom" style="display:none">
+<h2 class = "w3-center">
+	<img src="manchesterunited.jpg" class="w3-button w3-white  w3-square" style="width:20%">
+	<p>Awal mula sejarah Manchester United adalah saat pertama dibentuk di tahun 1878. Saat itu nama klub ini adalah Newton 
+	Heath LYR dan baru berganti nama menjadi Manchester United sejak tahun 1902. Sejak tahun 1910, klub ini bermarkas di Stadion 
+	Old Trafford. Klub ini menjadi salah satu klub papan atas dalam sejarah Liga Inggris. </p>
+</div>
+
+<script>
+function openKota(namakota) 
+{
+	var i;
+	var x = document.getElementsByClassName("kota");
+	for (i = 0; i < x.length; i++) {
+	x[i].style.display = "none"; 
+}
+ document.getElementById(namakota).style.display = "block"; 
+}
+</script>
+</body>
+</html>
